@@ -16,7 +16,7 @@ PULSE_WIDTH         = 1      # LEDs on either side of center
 SPEED               = 360    # LEDs per second
 DECAY_RATE          = 0.1   # tail fade (0–1)
 SENSITIVITY         = 0.5    # audio sensitivity multiplier
-HUE_CYCLE_SPEED     = 0.25    # Adding some hue cycling in for color diversity
+HUE_CYCLE_SPEED     = 0.5    # Adding some hue cycling in for color diversity
 
 # Derived timings
 dt_frame = 1.0 / FPS
@@ -83,7 +83,7 @@ def main():
     try:
         while True:
             t0 = time.perf_counter()
-            global_hue_power = (global_hue_power + HUE_CYCLE_SPEED * dt_frame % 1.0)
+            global_hue_power = (global_hue_power + HUE_CYCLE_SPEED * dt_frame ) % 1.0
 
             # Capture & mix to mono
             if buffer_ready:
