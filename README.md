@@ -1,4 +1,7 @@
 # Vibe Effects
+![Demo](Vibe_Effects_RGB_Wave.gif)
+
+![Demo](Vibe_Effects_Audio_Pulse.gif)
 
 AI // This was vibe-coded as a fun side project in a few hours — not rigorously tested. Use and tweak freely!
 
